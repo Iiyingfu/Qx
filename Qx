@@ -25,22 +25,21 @@ circumvent-ipv4-answer = 127.0.0.1, 0.0.0.0, 61.160.148.90, 182.43.124.6, 124.23
 circumvent-ipv6-answer = ::
 
 [policy]
-static=全球加速, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
-static=苹果服务, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
-static=港台番剧, 香港节点, 台湾节点, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingSE.png
-static=国际媒体, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
-static=电报代理, 狮城节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
-static=黑白名单, 香港节点, 台湾节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+static=全球加速, 香港节点, 美国节点, 日本节点, 韩国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+static=苹果服务, 香港节点, 美国节点, 日本节点, 韩国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Apple.png
+static=港台番剧, 香港节点, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/StreamingSE.png
+static=国际媒体, 香港节点, 美国节点, 日本节点, 韩国节点, 特殊节点, proxy, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
+static=电报代理, 美国节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+static=黑白名单, 香港节点, 美国节点, 日本节点, 韩国节点, 特殊节点, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
 static=特殊节点, server-tag-regex=^(?!.*(港|台|日|韩|坡|美|HK|US|TW|JP|KR|SG|Hong|Tai|Japan|Korea|Singapore|States)), img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
 url-latency-benchmark=香港节点, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
-url-latency-benchmark=台湾节点, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 url-latency-benchmark=日本节点, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
 url-latency-benchmark=韩国节点, server-tag-regex=(?=.*(韩|韓|朝|KR|(?i)Korea))^((?!(港|台|日|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
-url-latency-benchmark=狮城节点, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|兰|美)).)*$, check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
-url-latency-benchmark=美国节点, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+
 [server_remote]
-
-
+https://Hanu9pR.doggygo.top:8443/api/v1/client/7d9658db51a8122f94efbd02c7ea0d93, tag=狗狗加速.com, update-interval=86400, opt-parser=false, enabled=true
+https://45.137.181.238/link/89Xqh4cBMmJvXWCO?list=quantumultx, tag=cylink.biz, update-interval=86400, opt-parser=false, enabled=true
 
 [filter_remote]
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct+.list, tag=直连修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
